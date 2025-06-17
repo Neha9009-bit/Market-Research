@@ -1,0 +1,32 @@
+import os
+
+# Define directory structure
+directories = [
+    "ev-market-india-analysis/data",
+    "ev-market-india-analysis/notebooks",
+    "ev-market-india-analysis/src",
+    "ev-market-india-analysis/presentation"
+]
+
+# Create directories
+for directory in directories:
+    os.makedirs(directory, exist_ok=True)
+
+# Create README.md
+readme_content = """# EV Market Segmentation & Strategy 🚗⚡
+
+This repository analyzes the Indian Electric Vehicle market using demographic, geographic, behavioral, and economic segmentation.
+
+## 📂 Structure
+
+- `data/`: CSV files of EV sales, charging infra, and subsidies
+- `notebooks/`: Jupyter notebook for analysis
+- `src/`: Python scripts for cleaning and segmentation
+- `presentation/`: PDF or slide deck
+- `requirements.txt`: Python dependencies
+
+## 🚀 Run the Project
+
+```bash
+pip install -r requirements.txt
+jupyter notebook notebooks/segmentation_analysis.ipynb
